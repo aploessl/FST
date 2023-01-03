@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114742406-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CX2YVTN6Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -15,7 +15,7 @@
     dataLayer.push(arguments);
   }
   gtag('js', new Date());
-  gtag('config', 'UA-114742406-2');
+  gtag('config', 'G-5CX2YVTN6Q');
 </script>
 
 <head>
@@ -161,22 +161,22 @@
     window.onload = choosePic;
 
     var myPix = new Array(
-      "/static/images/collection_1a.png",
-      "/static/images/collection_2a.png",
-      "/static/images/collection_3a.png",
-      "/static/images/collection_4a.png",
-      "/static/images/collection_5a.png",
-      "/static/images/collection_6a.png",
-      "/static/images/collection_7a.png",
-      "/static/images/collection_8a.png",
-      "/static/images/collection_9a.png",
-      "/static/images/collection_10a.png",
-      "/static/images/collection_11a.png",
-      "/static/images/collection_12a.png",
-      "/static/images/collection_13a.png",
-      "/static/images/collection_14a.png",
-      "/static/images/collection_15a.png",
-      "/static/images/collection_16a.png",
+      "images/collection_1a.png",
+      "images/collection_2a.png",
+      "images/collection_3a.png",
+      "images/collection_4a.png",
+      "images/collection_5a.png",
+      "images/collection_6a.png",
+      "images/collection_7a.png",
+      "images/collection_8a.png",
+      "images/collection_9a.png",
+      "images/collection_10a.png",
+      "images/collection_11a.png",
+      "images/collection_12a.png",
+      "images/collection_13a.png",
+      "images/collection_14a.png",
+      "images/collection_15a.png",
+      "images/collection_16a.png",
 
     );
 
@@ -204,7 +204,7 @@
     }
   </script>
 
-  <div id="upload" style="background-image: url('/static/images/pexel.jpg')" style="height:auto; width:auto;  display:flex">
+  <div id="upload" style="background-image: url('images/pexel.jpg')" style="height:auto; width:auto;  display:flex">
     <div class="container">
       <div class="row" style="margin-bottom:0px">
         <div class="col" style="text-align:center">
@@ -220,10 +220,10 @@
           <div class="panel-body addition bordershadow"><img id="SecondPicture" src='' class="img-responsive" style="width:100%" alt="Image"></div>
         </div>
         <div class="col-sm-3">
-          <div class="panel-body addition bordershadow"><img id="ThirdPicture" src='/static/images/collection_3a.png' class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-body addition bordershadow"><img id="ThirdPicture" src='images/collection_3a.png' class="img-responsive" style="width:100%" alt="Image"></div>
         </div>
         <div class="col-sm-3">
-          <div class="panel-body addition bordershadow"><img id="FourthPicture" src='/static/images/collection_4a.png' class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-body addition bordershadow"><img id="FourthPicture" src='images/collection_4a.png' class="img-responsive" style="width:100%" alt="Image"></div>
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@
       </div>
     </div>
   </div>
-  <div id="upload" style="background-image: url('/static/images/pexel.jpg')" style="height:auto; width:auto; display:flex">
+  <div id="upload" style="background-image: url('images/pexel.jpg')" style="height:auto; width:auto; display:flex">
 
     <!-- SECOND CONTENT -->
     <div class="container" style=" padding-top:20px; ">
@@ -994,7 +994,8 @@
       //Requesting the response of the @app.route("/predict", methods = ["POST"])
       //LOCALHOST needs to be changed for online use
       // /predict is the name of APP route point in the Python files
-      $.post("http://localhost:5000/transfer", JSON.stringify(message), function(response) {
+      //$.post("http://localhost:5000/transfer", JSON.stringify(message), function(response) {
+	  $.post("https://imageproj1.uc.r.appspot.com/transfer", JSON.stringify(message), function(response) {
         //  $.post("https://neural-style-transfer-app.ew.r.appspot.com/transfer", JSON.stringify(message), function(response) {
 
 
