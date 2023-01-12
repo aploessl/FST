@@ -4,11 +4,13 @@ instance_class: F4_HIGHMEM
 
 entrypoint: gunicorn -b :$PORT main:app
 
- http_headers:
-    Access-Control-Allow-Origin: https://imagexp.ploessl.org
+
 handlers:
 - url: /
   script: auto
 
 - url: /static
   static_dir: static
+ 
+  http_headers:
+    Access-Control-Allow-Origin: https://imagexp.ploessl.org
