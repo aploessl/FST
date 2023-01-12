@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114742406-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CX2YVTN6Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -15,7 +15,7 @@
     dataLayer.push(arguments);
   }
   gtag('js', new Date());
-  gtag('config', 'UA-114742406-2');
+  gtag('config', 'G-5CX2YVTN6Q');
 </script>
 
 <head>
@@ -994,9 +994,9 @@
       //Requesting the response of the @app.route("/predict", methods = ["POST"])
       //LOCALHOST needs to be changed for online use
       // /predict is the name of APP route point in the Python files
-      $.post("http://localhost:5000/transfer", JSON.stringify(message), function(response) {
+      //$.post("http://localhost:5000/transfer", JSON.stringify(message), function(response) {
         //  $.post("https://neural-style-transfer-app.ew.r.appspot.com/transfer", JSON.stringify(message), function(response) {
-
+	$.post("https://imageproj1.uc.r.appspot.com/transfer", JSON.stringify(message), function(response) {
 
         //Console Log is for testing purpose only
         //console.log(response);
