@@ -13,4 +13,4 @@ handlers:
   static_dir: static
  
   http_headers:   
-    Access-Control-Allow-Origin: https://imagexp.ploessl.org
+    Access-Control-Allow-Origin: *
