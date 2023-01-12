@@ -13,4 +13,6 @@ handlers:
   static_dir: static
  
   http_headers:   
-    Access-Control-Allow-Origin: https://imageproj1.uc.r.appspot.com/
+    Access-Control-Allow-Origin: https://imageproj1.uc.r.appspot.com
+    Access-Control-Allow-Origin: https://imagexp.ploessl.org
+    Access-Control-Allow-Origin: http://imagexp.ploessl.org
